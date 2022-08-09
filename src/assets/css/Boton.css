@@ -1,7 +1,7 @@
 button{
     width: 250px;
     height: 80px;
-    font: 35px;
+    font-size: 35px;
     font-family: Robot, sans-serif;
     font-weight: bold;
     color: white;
