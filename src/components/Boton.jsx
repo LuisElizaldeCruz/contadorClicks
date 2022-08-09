@@ -1,10 +1,10 @@
 import React from "react";
+import "../assets/css/Boton.css"
 
-
-const Boton =({texto, esBotonDeClick, manejarClic})=>{
+const Boton =({texto, esBotonDeClic, manejarClic})=>{
     return(
         <button
-        className={ esBotonDeClick ? "boton-clic" : "boton-reiniciar" }
+        className={ esBotonDeClic ? "boton-clic" : "boton-reiniciar" }
         onClick={manejarClic}>
         {texto}
         </button>
