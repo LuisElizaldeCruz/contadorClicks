@@ -1,11 +1,12 @@
 import React from "react";
+import "../assets/css/Contador.css";
 
-const Contador =({ numclics })=>{
+const Contador =({ numClics })=>{
     return(
         <div className="contador">
-        {numclics}
+        {numClics}
         </div>
     );
-}
+};
 
-export default Contador
+export default Contador;

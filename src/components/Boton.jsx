@@ -9,6 +9,6 @@ const Boton =({texto, esBotonDeClic, manejarClic})=>{
         {texto}
         </button>
     );
-}
+};
 
 export default Boton;

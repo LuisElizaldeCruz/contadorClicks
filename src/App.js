@@ -2,15 +2,19 @@ import './App.css';
 import logo from "./assets/imagenes/stock-photo-cup.jpeg";
 import Boton from './components/Boton';
 import Contador from './components/Contador';
+import { useState } from 'react'
 
 function App() {
-  const manejarClic = () => {
-    console.log("clic");
-  }
+
+  const [numClics, setNumClics] = useState(0);
+
+  const manejarClic = () =>{
+    setNumClics(numClics+1);
+  };
 
   const reiniciarContador = () => {
-    console.log("Reiniciar")  
-  }
+    setNumClics(0); 
+  };
 
   return (
     <div className="App">
@@ -21,7 +25,8 @@ function App() {
       </div>
 
       <div className="contenedor-principal">
-        <Contador numClics="5"/>
+        <Contador 
+        numClics={numClics}/>
         <Boton
           texto="Clic"
           esBotonDeClic={true}
